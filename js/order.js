@@ -60,74 +60,123 @@ const menuItems = [
     description:
       "Kue cokelat lembut dengan lapisan ganache yang kaya. Cocok untuk penutup makanan atau camilan.",
   },
-  {
-    id: 7,
-    name: "Espresso",
-    price: 28000,
-    image: "img/espresso.jpg",
-    category: "minuman",
-    rating: 4.5,
-    description:
-      "Shot espresso murni dengan crema yang sempurna. Untuk pecinta kopi yang menyukai rasa kuat.",
-  },
-  {
-    id: 8,
-    name: "Latte",
-    price: 37500,
-    image: "img/latte.jpg",
-    category: "minuman",
-    rating: 4.6,
-    description:
-      "Perpaduan sempurna antara espresso dan steamed milk dengan lapisan foam yang tipis.",
-  },
+
   {
     id: 9,
-    name: "Matcha Latte",
-    price: 42000,
-    image: "img/matcha-latte.jpg",
-    category: "minuman",
-    rating: 4.7,
+    name: "Shrimp Fried Rice",
+    price: 49500,
+    image: "img/nasgor.jpg",
+    category: "makanan",
+    rating: 4.0,
     description:
-      "Green tea matcha premium dicampur dengan steamed milk. Rasa yang unik dan menenangkan.",
+      "Nasi goreng oriental premium dengan udang plump segar dan bumbu rahasia yang kaya wok-hei (aroma wajan). Ditaburi biji wijen sangrai dan disajikan dengan presentasi mewah. Kualitas hidangan utama, bukan sekadar nasi goreng.",
   },
   {
     id: 10,
-    name: "Beef Burger",
-    price: 55000,
-    image: "img/beef-burger.jpg",
-    category: "makanan",
+    name: "The Emerald",
+    price: 33000,
+    image: "img/matcha-latte.jpg",
+    category: "minuman",
     rating: 4.5,
     description:
-      "Burger dengan patty daging sapi premium, keju, sayuran segar, dan saus spesial dalam roti yang lembut.",
+      "Rasakan perpaduan sempurna antara Matcha Grade Seremonial yang diolah dengan tangan (hand-whisked) untuk menghasilkan lapisan hijau pekat Umami yang khas. Dituang perlahan di atas susu pilihan yang dingin dan creamy. Sebuah keseimbangan velvety smooth antara pahit dan manis yang menyegarkan. Bahan yang kami gunakan: 100% segar dan premium.",
   },
   {
     id: 11,
-    name: "Caesar Salad",
-    price: 45000,
-    image: "img/caesar-salad.jpg",
+    name: "Sirloin Steak",
+    price: 78000,
+    image: "img/Sirloin-Steak.jpg",
     category: "makanan",
-    rating: 4.2,
+    rating: 4.7,
     description:
-      "Salad segar dengan daun romaine, crouton, parmesan, dan saus caesar yang creamy.",
+      "Potongan Sirloin Premium yang di-grill sempurna (charred exterior) untuk menghasilkan lapisan luar yang kaya rasa dan daging yang juicy di dalamnya. Dihidangkan dengan [Sebutkan nama spesifik saus Anda] dan sayuran panggang segar.",
   },
   {
     id: 12,
-    name: "Croissant",
-    price: 22000,
-    image: "img/croissant.jpg",
+    name: "Buttermilk Stacks",
+    price: 39500,
+    image: "img/Buttermilk-Stacks.jpg",
     category: "snack",
     rating: 4.3,
     description:
-      "Croissant Prancis asli dengan tekstur berlapis dan rasa mentega yang khas.",
+      "pancake Buttermilk yang fluffy dan ringan, dimasak hingga golden brown sempurna. Disiram dengan Caramel Drizzle premium buatan sendiri yang rich dan manis. Ditemani irisan stroberi segar dan toasted nuts untuk keseimbangan rasa dan tekstur. Sebuah hidangan penutup yang mewah dan memuaskan.",
   },
+
   {
     id: 13,
-    name: "memek goreng",
-    price: 1,
-    image: "img/croissant.jpg",
+    name: "French Fries",
+    price: 24400,
+    image: "img/French-Fries.jpg",
     category: "snack",
-    rating: 4.3,
-    description: "Croissant Pcihuy.",
+    rating: 3.9,
+    description:
+      "Kentang potong tebal pilihan yang digoreng dua kali untuk kerenyahan maksimal di luar, dengan bagian dalam yang tetap lembut. Ditaburi bumbu paprika premium dan disajikan bersama Duo Saus andalan kami: [Sebutkan Saus Merah Anda] dan [Sebutkan Saus Putih Anda] yang creamy. Snack wajib dengan kerenyahan yang terjamin.",
+  },
+
+  {
+    id: 14,
+    name: "The Green Chili Deluxe",
+    price: 39500,
+    image: "img/Berger.jpg",
+    category: "makanan",
+    rating: 4.6,
+    description:
+      "Burger andalan dengan patty daging sapi segar dan juicy, dimasak sempurna di atas grill. Dilapisi dengan keju [Sebutkan Jenis Keju] yang meleleh, sayuran segar, dan irisan Jalapeño yang memberikan sensasi pedas menyegarkan. Disajikan dalam Toasted Bun [Sebutkan Jenis Roti, misal: Brioche] yang lembut. Rasakan keseimbangan antara gurih, segar, dan pedas.",
+  },
+
+  {
+    id: 15,
+    name: "Salmon Aburi Roll",
+    price: 78000,
+    image: "img/Sushi.jpg",
+    category: "makanan",
+    rating: 4.9,
+    description:
+      "Roll sushi spesial dengan isian crispy tempura dan timun, dibalut nasi premium yang firm dan tender. Di atasnya, diselimuti irisan Salmon Sashimi-Grade yang segar, disiram dengan Saus Mentai House-Made yang creamy, lalu di-torch untuk aroma smoky khas aburi. Diakhiri taburan crunchy flakes untuk ledakan tekstur di setiap gigitan. Jaminan Kesegaran dan Kualitas Premium",
+  },
+
+  {
+    id: 16,
+    name: "Madagascar Vanilla Choux",
+    price: 33000,
+    image: "img/es.jpg",
+    category: "snack",
+    rating: 3.9,
+    description:
+      "choux yang ringan dan renyah, diisi dengan Artisan Vanilla Bean Ice Cream yang dingin dan creamy. Disajikan dengan fresh berries dan disiram Chocolate Ganache Premium yang panas, menciptakan kontras sempurna antara suhu dan tekstur. Sebuah dessert mewah dan memuaskan.",
+  },
+
+  {
+    id: 17,
+    name: "The Grand Caesar Salad",
+    price: 50000,
+    image: "img/salat.jpg",
+    category: "makanan",
+    rating: 4.5,
+    description:
+      "Kombinasi sempurna dari selada romaine segar, irisan ayam panggang premium, croutons homemade yang renyah, dan taburan shaved parmesan Italia. Disajikan dengan Dressing Caesar Creamy buatan sendiri yang gurih",
+  },
+
+  {
+    id: 18,
+    name: "Four Cheese Macaroni",
+    price: 28000,
+    image: "img/M&C.jpg",
+    category: "makanan",
+    rating: 3.4,
+    description:
+      "Pasta macaroni klasik yang dimasak sempurna dan dilumuri saus keju house-made yang super creamy dan gurih. Dibuat dengan perpaduan Cheddar dan Mozzarella premium dan bumbu segar. Diakhiri dengan taburan parsley segar untuk garnish.",
+  },
+
+  {
+    id: 19,
+    name: "The Parisian Classic",
+    price: 22500,
+    image: "img/kuaksong.jpg",
+    category: "snack",
+    rating: 3.6,
+    description:
+      "Roti klasik Prancis yang dipanggang setiap hari dengan Butter Eropa Premium hingga mencapai warna golden brown yang sempurna. Rasakan lapisan flaky dan renyah di luar, dengan tekstur lembut (airy) dan buttery di dalam. Disajikan hangat, paling sempurna dengan sedikit butter dan kopi.",
   },
 ];
 
