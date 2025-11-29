@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order - TheCoffeeHaven.</title>
+
+    <!--feather icon-->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/order.css" />
+  </head>
+
+  <body>
+    <!-- navbar start-->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">The<span>Coffee</span>Heven.</a>
+
+      <div class="navbar-nav" id="navbarNav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">tentang kami</a>
+        <a href="index.html#menu">menu</a>
+        <a href="index.html#contact">kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="shopping-cart" class="cart-icon">
+          <i data-feather="shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- navbar end-->
+
+    <!-- Order Section -->
+    <section class="order-section">
+      <div class="container">
+        <h2><span>Daftar</span> Menu Lengkap</h2>
+        <p>Pilih menu favorit Anda dan tambahkan ke keranjang</p>
+
+        <!-- Search Bar -->
+        <div class="search-section">
+          <div class="search-container">
+            <i data-feather="search"></i>
+            <input
+              type="text"
+              id="order-search"
+              placeholder="Cari menu favorit Anda..."
+            />
+            <button id="clear-search" style="display: none">
+              <i data-feather="x"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="minuman">Minuman</button>
+          <button class="filter-btn" data-filter="makanan">Makanan</button>
+          <button class="filter-btn" data-filter="snack">Snack</button>
+        </div>
+
+        <div class="order-grid" id="order-grid">
+          <!-- Menu items akan dimasukkan di sini oleh JavaScript -->
+        </div>
+
+        <!-- Search Results Message -->
+        <div
+          id="search-results"
+          class="search-results"
+          style="display: none"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Modal untuk detail produk -->
+    <div class="product-modal" id="product-modal">
+      <div class="modal-content">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <div class="modal-body" id="modal-body">
+          <!-- Konten detail produk akan dimasukkan di sini -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal keranjang -->
+    <div class="cart-modal" id="cart-modal">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h3>Keranjang Belanja</h3>
+          <i data-feather="x" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <!-- Item keranjang akan dimasukkan di sini -->
+        </div>
+        <div class="cart-total">
+          <p>Total: <span id="cart-total-price">Rp 0</span></p>
+          <button class="btn checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer start-->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/nka102007/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=61583394097177"
+          ><i data-feather="facebook"></i
+        ></a>
+        <a href="https://youtube.com/@normankharimaakbar?si=J0QQKNq0GRZ7Qsts"
+          ><i data-feather="youtube"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">tentang kami</a>
+        <a href="index.html#menu">menu</a>
+        <a href="index.html#contact">kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>created by <a href="">NKA</a>. | &copy; 2025.</p>
+      </div>
+    </footer>
+    <!-- footer end-->
+
+    <!--feather icons-->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- AOS Initialization -->
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+      });
+    </script>
+
+    <!--my java script-->
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script>
+  </body>
+</html>

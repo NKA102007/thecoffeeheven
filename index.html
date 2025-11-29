@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kopi luwak sejahtera.</title>
+    <title>TheCoffeeHaven.</title>
 
     <!--feather icon-->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- AOS Library for Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- my style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -22,7 +26,7 @@
   <body>
     <!-- navbar start-->
     <nav class="navbar">
-      <a href="#" class="navbar-logo">luwak<span>sejahtera</span>.</a>
+      <a href="#" class="navbar-logo">The<span>Coffee</span>Heven.</a>
 
       <div class="navbar-nav" id="navbarNav">
         <a href="#home">Home</a>
@@ -32,8 +36,10 @@
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="shopping-cart" class="cart-icon">
+          <i data-feather="shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
     </nav>
@@ -41,9 +47,9 @@
     <!-- navbar end-->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Awali Harimu Dengan secangkir <span>kopi</span></h1>
-        <p>Aroma dan rasa kopi luwak sungguh luar biasa dan memikat.</p>
-        <a href="#" class="cta">langsung beli</a>
+        <h1>Tempat Bersinggah Dan <span>Bersantai</span></h1>
+        <p>Hidangan Menggugah Selera Senunggumu!.</p>
+        <a href="order.html" class="cta">order here</a>
       </main>
     </section>
     <!--hero section end  -->
@@ -58,22 +64,16 @@
           <img src="img/tentang-kami.jpg" alt="tentang kami" />
         </div>
         <div class="content">
-          <h3>
-            Bingung pilih kopi yang beneran enak? Coba kopi luwak sejahtera!
-          </h3>
+          <h3>kenapa harus cafe kami?</h3>
           <p>
-            Kopi luwak kami itu spesial karena proses alaminya. Luwak hanya
-            milih buah kopi yang paling manis dan matang untuk dimakan.
-            Hasilnya? Rasa kopinya jadi halus banget, nggak pahit, dan aromanya
-            bikin nagih. Dijamin, ini pengalaman ngopi yang beda dari yang lain!
+            semua hidangan yang kami sajikan di buat oleh chef berpengalaman
+            yang mengutamakan kualitas dan cita rasa.
           </p>
-          <h3>Yang jual kopi luwak banyak, kenapa harus beli di sini?</h3>
+          <h3>Bahan dasar?</h3>
           <p>
-            Kami jamin 100% asli, langsung dari petani lokal. Nggak pakai
-            campuran atau proses ternak paksa. Dengan beli di sini, kamu dapet
-            kopi premium yang premium beneran, sekaligus dukung petani kami.
-            Yuk, buktiin sendiri kenapa kopi luwak kami jadi favorit banyak
-            pelanggan!
+            kami hanya menggunakan bahan-bahan segar dan berkualitas tinggi
+            untuk memastikan setiap hidangan yang kami sajikan memenuhi standar
+            tertinggi dan memuaskan selera pelanggan kami.
           </p>
         </div>
       </div>
@@ -84,38 +84,45 @@
     <!--menu section start-->
 
     <section id="menu" class="menu">
-      <h2><span>menu</span> kami</h2>
+      <h2><span>menu </span>kami</h2>
       <p>
-        Kopi luwak kami menawarkan rasa yang halus. Diproses secara alami oleh
-        luwak liar, setiap tegukan adalah cerita murni tentang kualitas
-        terpilih.
+        ini adalah beberapa menu andalan yang kami sajikan di cafe kami, yang
+        pasti akan memanjakan lidah anda.
       </p>
 
       <div class="row">
         <div class="menu-card">
-          <img src="img/1.jpeg" alt="kopi luwak" />
-          <h3 class="menu-card-title">-kopi luwak-</h3>
-          <h3 class="menu-card-price">IDR 275T</h3>
+          <img src="img/dark-coffee.jpg" alt="Dark coffee" />
+          <h3 class="menu-card-title">-Dark coffee-</h3>
+          <h3 class="menu-card-price">Rp.34.200</h3>
         </div>
         <div class="menu-card">
-          <img src="img/1.jpeg" alt="kopi luwak" />
-          <h3 class="menu-card-title">-kopi luwak-</h3>
-          <h3 class="menu-card-price">IDR 275T</h3>
+          <img
+            src="img/red-dragon-fruit-juice.jpg"
+            alt="Red dragon fruit juice"
+          />
+          <h3 class="menu-card-title">-Red dragon fruit juice-</h3>
+          <h3 class="menu-card-price">Rp.23.000</h3>
         </div>
         <div class="menu-card">
-          <img src="img/1.jpeg" alt="kopi luwak" />
-          <h3 class="menu-card-title">-kopi luwak-</h3>
-          <h3 class="menu-card-price">IDR 275T</h3>
+          <img src="img/Cappuccino.jpg" alt="Cappuccino" />
+          <h3 class="menu-card-title">-Cappuccino-</h3>
+          <h3 class="menu-card-price">Rp.39.500</h3>
         </div>
         <div class="menu-card">
-          <img src="img/1.jpeg" alt="kopi luwak" />
-          <h3 class="menu-card-title">-kopi luwak-</h3>
-          <h3 class="menu-card-price">IDR 275T</h3>
+          <img src="img/Fettuccine-Carbonara.jpg" alt="Fettuccine Carbonara" />
+          <h3 class="menu-card-title">-Fettuccine Carbonara-</h3>
+          <h3 class="menu-card-price">Rp.89.300</h3>
         </div>
         <div class="menu-card">
-          <img src="img/1.jpeg" alt="kopi luwak" />
-          <h3 class="menu-card-title">-kopi luwak-</h3>
-          <h3 class="menu-card-price">IDR 275T</h3>
+          <img src="img/Chicken-Katsu.jpg" alt="Chicken Katsu" />
+          <h3 class="menu-card-title">-chicken katsu-</h3>
+          <h3 class="menu-card-price">Rp.67.000</h3>
+        </div>
+        <div class="menu-card">
+          <img src="img/cake.jpg" alt="cake" />
+          <h3 class="menu-card-title">-cake-</h3>
+          <h3 class="menu-card-price">Rp.32.400</h3>
         </div>
       </div>
     </section>
@@ -125,7 +132,7 @@
     <!--contact section start-->
     <section id="contact" class="contact">
       <h2><span>kontak</span> kami</h2>
-      <p>tanya apa saja mengenai produk kami di sini</p>
+      <p>Pesanan Dalam Jumlah Besar? Bisa Hubungi Kami</p>
 
       <div class="row">
         <iframe
@@ -162,9 +169,15 @@
 
     <footer>
       <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="https://www.instagram.com/nka102007/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=61583394097177"
+          ><i data-feather="facebook"></i
+        ></a>
+        <a href="https://youtube.com/@normankharimaakbar?si=J0QQKNq0GRZ7Qsts"
+          ><i data-feather="youtube"></i
+        ></a>
       </div>
 
       <div class="links">
@@ -181,9 +194,35 @@
 
     <!-- footer end-->
 
+    <!-- Modal keranjang -->
+    <div class="cart-modal" id="cart-modal">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h3>Keranjang Belanja</h3>
+          <i data-feather="x" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <!-- Item keranjang akan dimasukkan di sini -->
+        </div>
+        <div class="cart-total">
+          <p>Total: <span id="cart-total-price">Rp 0</span></p>
+          <button class="btn checkout-btn">Checkout</button>
+        </div>
+      </div>
+    </div>
+
     <!--feather icons-->
     <script>
       feather.replace();
+    </script>
+
+    <!-- AOS Initialization -->
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+      });
     </script>
 
     <!--my java script-->
