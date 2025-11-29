@@ -95,7 +95,7 @@ const menuItems = [
     id: 10,
     name: "Buttermilk Stacks",
     price: 39500,
-    image: "img/Buttermilk-Stacks.jpg",
+    image: "img/panekuk.jpeg",
     category: "snack",
     rating: 4.3,
     description:
@@ -159,9 +159,9 @@ const menuItems = [
 
   {
     id: 16,
-    name: "Four Cheese Macaroni",
+    name: "Mac and cheese",
     price: 28000,
-    image: "img/M&C.jpg",
+    image: "img/MdanC.jpg",
     category: "makanan",
     rating: 3.4,
     description:
