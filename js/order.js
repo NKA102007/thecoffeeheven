@@ -62,7 +62,7 @@ const menuItems = [
   },
 
   {
-    id: 9,
+    id: 7,
     name: "Shrimp Fried Rice",
     price: 49500,
     image: "img/nasgor.jpg",
@@ -72,7 +72,7 @@ const menuItems = [
       "Nasi goreng oriental premium dengan udang plump segar dan bumbu rahasia yang kaya wok-hei (aroma wajan). Ditaburi biji wijen sangrai dan disajikan dengan presentasi mewah. Kualitas hidangan utama, bukan sekadar nasi goreng.",
   },
   {
-    id: 10,
+    id: 8,
     name: "The Emerald",
     price: 33000,
     image: "img/matcha-latte.jpg",
@@ -82,7 +82,7 @@ const menuItems = [
       "Rasakan perpaduan sempurna antara Matcha Grade Seremonial yang diolah dengan tangan (hand-whisked) untuk menghasilkan lapisan hijau pekat Umami yang khas. Dituang perlahan di atas susu pilihan yang dingin dan creamy. Sebuah keseimbangan velvety smooth antara pahit dan manis yang menyegarkan. Bahan yang kami gunakan: 100% segar dan premium.",
   },
   {
-    id: 11,
+    id: 9,
     name: "Sirloin Steak",
     price: 78000,
     image: "img/Sirloin-Steak.jpg",
@@ -92,7 +92,7 @@ const menuItems = [
       "Potongan Sirloin Premium yang di-grill sempurna (charred exterior) untuk menghasilkan lapisan luar yang kaya rasa dan daging yang juicy di dalamnya. Dihidangkan dengan [Sebutkan nama spesifik saus Anda] dan sayuran panggang segar.",
   },
   {
-    id: 12,
+    id: 10,
     name: "Buttermilk Stacks",
     price: 39500,
     image: "img/Buttermilk-Stacks.jpg",
@@ -103,7 +103,7 @@ const menuItems = [
   },
 
   {
-    id: 13,
+    id: 11,
     name: "French Fries",
     price: 24400,
     image: "img/French-Fries.jpg",
@@ -114,7 +114,7 @@ const menuItems = [
   },
 
   {
-    id: 14,
+    id: 12,
     name: "The Green Chili Deluxe",
     price: 39500,
     image: "img/Berger.jpg",
@@ -125,7 +125,7 @@ const menuItems = [
   },
 
   {
-    id: 15,
+    id: 13,
     name: "Salmon Aburi Roll",
     price: 78000,
     image: "img/Sushi.jpg",
@@ -136,7 +136,7 @@ const menuItems = [
   },
 
   {
-    id: 16,
+    id: 14,
     name: "Madagascar Vanilla Choux",
     price: 33000,
     image: "img/es.jpg",
@@ -147,7 +147,7 @@ const menuItems = [
   },
 
   {
-    id: 17,
+    id: 15,
     name: "The Grand Caesar Salad",
     price: 50000,
     image: "img/salat.jpg",
@@ -158,7 +158,7 @@ const menuItems = [
   },
 
   {
-    id: 18,
+    id: 16,
     name: "Four Cheese Macaroni",
     price: 28000,
     image: "img/M&C.jpg",
@@ -169,7 +169,7 @@ const menuItems = [
   },
 
   {
-    id: 19,
+    id: 17,
     name: "The Parisian Classic",
     price: 22500,
     image: "img/kuaksong.jpg",
