@@ -329,11 +329,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Update feather icons
   feather.replace();
-
-  // Initialize AOS
-  AOS.init({
-    duration: 800,
-    once: true,
-    offset: 100,
-  });
 });

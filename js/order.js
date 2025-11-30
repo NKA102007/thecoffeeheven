@@ -343,7 +343,7 @@ function setupFilterButtons() {
   });
 }
 
-// Fungsi untuk menampilkan detail produk
+// Fungsi untuk menampilkan detail produk - PERBAIKAN
 function showProductDetail(itemId) {
   const item = menuItems.find((menuItem) => menuItem.id == itemId);
   if (!item) return;
@@ -364,15 +364,19 @@ function showProductDetail(itemId) {
   }
 
   modalBody.innerHTML = `
-    <img src="${item.image}" alt="${item.name}" class="modal-img">
+    <div class="modal-img-container">
+      <img src="${item.image}" alt="${item.name}" class="modal-img">
+    </div>
     <div class="modal-info">
-      <h2 class="modal-title">${item.name}</h2>
-      <div class="modal-rating">
-        ${stars}
-        <span>${item.rating}</span>
+      <div>
+        <h2 class="modal-title">${item.name}</h2>
+        <div class="modal-rating">
+          ${stars}
+          <span>${item.rating}</span>
+        </div>
+        <p class="modal-price">Rp ${item.price.toLocaleString()}</p>
+        <p class="modal-desc">${item.description}</p>
       </div>
-      <p class="modal-price">Rp ${item.price.toLocaleString()}</p>
-      <p class="modal-desc">${item.description}</p>
       <div class="modal-add-cart">
         <div class="quantity-controls">
           <button class="quantity-btn minus">-</button>

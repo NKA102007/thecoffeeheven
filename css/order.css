@@ -242,7 +242,7 @@
   color: #888;
 }
 
-/* Product Modal */
+/* Product Modal - PERBAIKAN */
 .product-modal {
   display: none;
   position: fixed;
@@ -263,13 +263,13 @@
 
 .modal-content {
   background: white;
-  width: 90%;
-  max-width: 800px;
+  width: 95%;
+  max-width: 1000px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   color: var(--bg);
-  max-height: 90vh;
+  max-height: 95vh;
   overflow-y: auto;
 }
 
@@ -281,27 +281,53 @@
   cursor: pointer;
   color: var(--bg);
   z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Perbaikan modal produk */
 .modal-body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.modal-img-container {
+  flex: 1;
+  min-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
 }
 
 .modal-img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .modal-info {
+  flex: 1;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .modal-title {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--bg);
+  line-height: 1.2;
 }
 
 .modal-rating {
@@ -316,21 +342,25 @@
 }
 
 .modal-price {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--primary);
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .modal-desc {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #555;
+  flex-grow: 1;
 }
 
 .modal-add-cart {
   display: flex;
   gap: 1rem;
   align-items: center;
+  margin-top: auto;
 }
 
 .quantity-controls {
@@ -343,55 +373,104 @@
   background: var(--primary);
   color: white;
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background: #9c744f;
+  transform: scale(1.1);
 }
 
 .quantity-input {
-  width: 50px;
+  width: 60px;
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .add-to-cart-btn {
   background: var(--primary);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 0.9rem 1.8rem;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
   flex-grow: 1;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .add-to-cart-btn:hover {
   background: #9c744f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsif untuk modal */
+@media (max-width: 768px) {
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-img-container {
+    min-height: 250px;
+  }
+
+  .modal-img {
+    max-height: 300px;
+  }
+
+  .modal-add-cart {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .modal-title {
+    font-size: 1.7rem;
+  }
+
+  .modal-price {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-img-container {
+    min-height: 200px;
+  }
+
+  .modal-img {
+    max-height: 250px;
+  }
+
+  .modal-info {
+    padding: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-price {
+    font-size: 1.3rem;
+  }
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .order-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-
-  .modal-body {
-    flex-direction: column;
-  }
-
-  .modal-img {
-    height: 200px;
-  }
-
-  .modal-add-cart {
-    flex-direction: column;
-    align-items: stretch;
   }
 }
 
